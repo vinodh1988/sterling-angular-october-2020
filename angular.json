@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "first-ang"
+    }
+  },
+  "defaultProject": "first-ang",
+  "cli": {
+    "analytics": false
+  }
 }
