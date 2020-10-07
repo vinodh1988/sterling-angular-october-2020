@@ -22,6 +22,7 @@
 <ul>
   <li *ngFor = "let n of programmers">{{n}}</li>
 </ul>
+ {{message}}
 <hr>
 <!--
 <app-two [menuitem]="menuitems[0]"></app-two>
@@ -30,7 +31,8 @@
 <app-two></app-two>
 <app-two></app-two>
 -->
-   <app-two *ngFor = "let n of menuitems; let i=index;" [menuitem]="n" [color]="menucolors[i]"></app-two>
+   <app-two *ngFor = "let n of menuitems; let i=index;" [menuitem]="n" [color]="menucolors[i]"
+   (listen)="process($event)"></app-two>
 </div>
 
 

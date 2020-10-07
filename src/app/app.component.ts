@@ -18,6 +18,8 @@ export class AppComponent {
 
   menuitems:string[] = ["Projects", "Achievements","Products","Career","Social"];
   menucolors:string[] = ["#26787F","#4A31E9","#AEE931","#E93166","#E93142"];
+
+  message:String = "No messages  Yet"
   changeTheme(index?){
 
     if(index==undefined)
@@ -25,6 +27,10 @@ export class AppComponent {
      else
        this.currentIndex =index;
     this.current =this.themes[index];
+  }
+
+  process(message){
+    this.message =message;
   }
 }
 
